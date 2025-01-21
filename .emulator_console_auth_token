@@ -1,0 +1,18 @@
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.core.methods.response.EthGetBalance;
+import org.web3j.protocol.http.HttpService;
+import org.web3j.utils.Convert;
+
+import java.math.BigDecimal;
+
+public class EthereumExample {
+    private static final String ETH_ADDRESS = "0x95e3442699f4e3c8d9fdf78d2a3918203c9d7cf2";
+
+    public static void main(String[] args) throws Exception {
+        Web3j web3 = Web3j.build(new HttpService("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"));
+        EthGetBalance balanceResponse = web3.ethGetBalance(ETH_ADDRESS, org.web3j.protocol.core.DefaultBlockParameterName.LATEST).send();
+        BigDecimal balanceInEther = Convert.fromWei(balanceResponse.getBalance().toString(), Convert.Unit.ETHER);
+
+        System.out.println("Balance of " + ETH_ADDRESS + ": " + balanceInEther + " ETH");
+    }
+}

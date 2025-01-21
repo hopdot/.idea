@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Project name="HCX Drive" designResolution="1920x1080" deviceResolution="1920x1080" toolsVersion="10.0.9900.19">
+  <scenes />
+  <copyAssetDirectly>1</copyAssetDirectly>
+  <default>
+    <font name="default/fonts/amermd.ttf" size="28" />
+  </default>
+  <project-home>assets\</project-home>
+  <ssheets />
+  <assets />
+  <assets.ref />
+  <debug-options />
+  <sceneNumbers />
+  <publish-opts>
+    <custom-readers />
+    <auto-open-dir>1</auto-open-dir>
+    <publish-dir>HCX Drive</publish-dir>
+    <publish-type>2</publish-type>
+    <cleanup-dir>0</cleanup-dir>
+    <csloader-version>2.1.0.0</csloader-version>
+    <csgen-version>2.1.0.0</csgen-version>
+  </publish-opts>
+  <objectCounters />
+</Project>

@@ -1,0 +1,6 @@
+{
+    "workbench.editor.titleScrollbarSizing": "large",
+    "workbench.editor.preferHistoryBasedLanguageDetection": true,
+    "workbench.editor.limit.excludeDirty": true,
+    "workbench.editor.limit.perEditorGroup": true
+}
